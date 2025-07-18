@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var selectedTheme: Magic8BallTheme = .auto
     @State private var cornerRadius: CGFloat = 0
     @State private var loadStatus = "Waiting..."
+    @State private var isOffline = false
     
     var body: some View {
         VStack(spacing: 20) {
@@ -39,6 +40,12 @@ struct ContentView: View {
                 Text("Status: \(loadStatus)")
                     .font(.caption)
                     .foregroundColor(.secondary)
+                
+                if isOffline {
+                    Text("📱 Using cached content (offline mode)")
+                        .font(.caption)
+                        .foregroundColor(.orange)
+                }
             }
             .padding()
             .background(Color.gray.opacity(0.1))
@@ -50,9 +57,11 @@ struct ContentView: View {
                 cornerRadius: cornerRadius,
                 onLoad: {
                     loadStatus = "✅ Loaded successfully!"
+                    isOffline = false
                 },
                 onError: { error in
                     loadStatus = "❌ Error: \(error.localizedDescription)"
+                    isOffline = true
                 }
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
