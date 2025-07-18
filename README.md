@@ -70,6 +70,58 @@ The app demonstrates:
 - UI customization options
 - Status monitoring for SDK initialization
 
+## Approach & Architecture
+
+**WebView-based SDK**: The SDK wraps a WebView that loads the Magic 8-Ball web experience from `https://xvehl58kcb.appflowapp.com/chat`. This approach allows:
+
+- **Live Updates**: Content can be updated without App Store reviews
+- **Cross-platform Consistency**: Same web experience across iOS, Android, and Web
+- **Rapid Iteration**: A/B testing and feature updates without SDK releases
+- **Lightweight**: Minimal native code, just WebView wrapper
+
+**SwiftUI Integration**: Built with SwiftUI for seamless integration into modern iOS apps, providing native feel and performance.
+
+## Limitations
+
+- **Simulator Focus**: Currently tested and optimized for iOS Simulator. Real device testing would be the next step for production readiness
+- **Layout Constraints**: Some NSLayoutConstraint warnings appear in console during development - these are non-blocking but indicate areas for UI polish
+- **Internet Dependency**: Requires internet connection for initial load (though caching is implemented)
+- **WebView Constraints**: Limited to WebView capabilities and performance
+- **iOS Only**: Currently targets iOS platform only
+- **Prototype Status**: This is a functional demo showcasing the SDK integration concept. Production deployment would require additional testing, error handling, and UI refinement
+
+**Note for Interview Context**: This demo prioritizes demonstrating the core SDK integration concept and extra credit features over production polish. The focus is on showing how quickly a working Magic 8-Ball integration can be achieved with the right architecture.
+
+## Getting Started
+
+### Prerequisites
+- Xcode 12.0 or later
+- iOS 14.0+ target
+- Swift 5.3+
+
+### Quick Start
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/Magic8Ball-iOS-Demo.git
+   cd Magic8Ball-iOS-Demo
+   ```
+
+2. **Open in Xcode**:
+   ```bash
+   open Magic8Ball-iOS-Demo.xcodeproj
+   ```
+
+3. **Build and Run**:
+   - Select your target device (iPhone Simulator recommended)
+   - Press `Cmd+R` or click the Run button
+   - The app will automatically download the SDK dependency
+
+4. **Test the Features**:
+   - Try asking questions to the Magic 8-Ball
+   - Experiment with theme customization (Auto/Light/Dark)
+   - Adjust the corner radius slider
+   - Check the status indicator for SDK loading
+
 ## Code Example
 
 ```swift
