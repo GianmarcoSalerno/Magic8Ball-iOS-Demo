@@ -10,13 +10,12 @@ import Magic8Ball_iOS_SDK
 
 struct ContentView: View {
     @State private var selectedTheme: Magic8BallTheme = .auto
-    @State private var backgroundColor: Color = .clear
     @State private var cornerRadius: CGFloat = 0
     
     var body: some View {
         VStack(spacing: 20) {
             Text("Magic 8-Ball SDK Demo")
-                .font(.largeTitle)
+                .font(.title)
                 .fontWeight(.bold)
             
             // Customization controls
@@ -32,11 +31,6 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 
                 HStack {
-                    Text("Background:")
-                    ColorPicker("", selection: $backgroundColor)
-                }
-                
-                HStack {
                     Text("Corner Radius: \(Int(cornerRadius))")
                     Slider(value: $cornerRadius, in: 0...20)
                 }
@@ -48,7 +42,6 @@ struct ContentView: View {
             // Magic 8-Ball with customization
             Magic8BallView(
                 theme: selectedTheme,
-                backgroundColor: backgroundColor,
                 cornerRadius: cornerRadius
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
