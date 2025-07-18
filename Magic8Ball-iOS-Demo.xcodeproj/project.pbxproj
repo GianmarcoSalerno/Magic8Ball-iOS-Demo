@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D30236D2E2A983600094478 /* Magic8Ball-iOS-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8D30236C2E2A983600094478 /* Magic8Ball-iOS-SDK */; };
+		8DFB3D3B2E2AB0AB00D866B1 /* Magic8Ball-iOS-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8DFB3D3A2E2AB0AB00D866B1 /* Magic8Ball-iOS-SDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D30236D2E2A983600094478 /* Magic8Ball-iOS-SDK in Frameworks */,
+				8DFB3D3B2E2AB0AB00D866B1 /* Magic8Ball-iOS-SDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +62,7 @@
 			children = (
 				8D3023332E2A97B200094478 /* Magic8Ball-iOS-Demo */,
 				8D3023432E2A97B400094478 /* Magic8Ball-iOS-DemoTests */,
+				8DFB3D392E2AB0AB00D866B1 /* Frameworks */,
 				8D3023322E2A97B200094478 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +74,13 @@
 				8D3023402E2A97B400094478 /* Magic8Ball-iOS-DemoTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8DFB3D392E2AB0AB00D866B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +103,7 @@
 			);
 			name = "Magic8Ball-iOS-Demo";
 			packageProductDependencies = (
-				8D30236C2E2A983600094478 /* Magic8Ball-iOS-SDK */,
+				8DFB3D3A2E2AB0AB00D866B1 /* Magic8Ball-iOS-SDK */,
 			);
 			productName = "Magic8Ball-iOS-Demo";
 			productReference = 8D3023312E2A97B200094478 /* Magic8Ball-iOS-Demo.app */;
@@ -153,7 +161,7 @@
 			mainGroup = 8D3023282E2A97B200094478;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				8D30236B2E2A983500094478 /* XCLocalSwiftPackageReference "../Magic8Ball-iOS-SDK" */,
+				8DFB3D382E2AB07D00D866B1 /* XCRemoteSwiftPackageReference "Magic8Ball-iOS-SDK" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8D3023322E2A97B200094478 /* Products */;
@@ -460,16 +468,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		8D30236B2E2A983500094478 /* XCLocalSwiftPackageReference "../Magic8Ball-iOS-SDK" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Magic8Ball-iOS-SDK";
+/* Begin XCRemoteSwiftPackageReference section */
+		8DFB3D382E2AB07D00D866B1 /* XCRemoteSwiftPackageReference "Magic8Ball-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GianmarcoSalerno/Magic8Ball-iOS-SDK.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8D30236C2E2A983600094478 /* Magic8Ball-iOS-SDK */ = {
+		8DFB3D3A2E2AB0AB00D866B1 /* Magic8Ball-iOS-SDK */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 8DFB3D382E2AB07D00D866B1 /* XCRemoteSwiftPackageReference "Magic8Ball-iOS-SDK" */;
 			productName = "Magic8Ball-iOS-SDK";
 		};
 /* End XCSwiftPackageProductDependency section */

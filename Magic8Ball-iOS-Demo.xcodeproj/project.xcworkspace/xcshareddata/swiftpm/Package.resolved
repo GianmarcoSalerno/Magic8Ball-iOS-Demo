@@ -1,0 +1,15 @@
+{
+  "originHash" : "a8313583f21c0d9bcc7ec7f5f0a29ef5ba7aa1683a8e1fb2a969b649be0cde50",
+  "pins" : [
+    {
+      "identity" : "magic8ball-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GianmarcoSalerno/Magic8Ball-iOS-SDK.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "807241336ae037ba692b1f5a805f17e047698014"
+      }
+    }
+  ],
+  "version" : 3
+}
