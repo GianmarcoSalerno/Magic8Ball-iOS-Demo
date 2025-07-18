@@ -18,19 +18,11 @@
 			remoteGlobalIDString = 8D3023302E2A97B200094478;
 			remoteInfo = "Magic8Ball-iOS-Demo";
 		};
-		8D30234B2E2A97B400094478 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8D3023292E2A97B200094478 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D3023302E2A97B200094478;
-			remoteInfo = "Magic8Ball-iOS-Demo";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8D3023312E2A97B200094478 /* Magic8Ball-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic8Ball-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3023402E2A97B400094478 /* Magic8Ball-iOS-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magic8Ball-iOS-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D30234A2E2A97B400094478 /* Magic8Ball-iOS-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magic8Ball-iOS-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -42,11 +34,6 @@
 		8D3023432E2A97B400094478 /* Magic8Ball-iOS-DemoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Magic8Ball-iOS-DemoTests";
-			sourceTree = "<group>";
-		};
-		8D30234D2E2A97B400094478 /* Magic8Ball-iOS-DemoUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Magic8Ball-iOS-DemoUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -67,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D3023472E2A97B400094478 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +62,6 @@
 			children = (
 				8D3023332E2A97B200094478 /* Magic8Ball-iOS-Demo */,
 				8D3023432E2A97B400094478 /* Magic8Ball-iOS-DemoTests */,
-				8D30234D2E2A97B400094478 /* Magic8Ball-iOS-DemoUITests */,
 				8D3023322E2A97B200094478 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,7 +71,6 @@
 			children = (
 				8D3023312E2A97B200094478 /* Magic8Ball-iOS-Demo.app */,
 				8D3023402E2A97B400094478 /* Magic8Ball-iOS-DemoTests.xctest */,
-				8D30234A2E2A97B400094478 /* Magic8Ball-iOS-DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,29 +124,6 @@
 			productReference = 8D3023402E2A97B400094478 /* Magic8Ball-iOS-DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8D3023492E2A97B400094478 /* Magic8Ball-iOS-DemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8D30235A2E2A97B400094478 /* Build configuration list for PBXNativeTarget "Magic8Ball-iOS-DemoUITests" */;
-			buildPhases = (
-				8D3023462E2A97B400094478 /* Sources */,
-				8D3023472E2A97B400094478 /* Frameworks */,
-				8D3023482E2A97B400094478 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8D30234C2E2A97B400094478 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				8D30234D2E2A97B400094478 /* Magic8Ball-iOS-DemoUITests */,
-			);
-			name = "Magic8Ball-iOS-DemoUITests";
-			packageProductDependencies = (
-			);
-			productName = "Magic8Ball-iOS-DemoUITests";
-			productReference = 8D30234A2E2A97B400094478 /* Magic8Ball-iOS-DemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,10 +138,6 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					8D30233F2E2A97B400094478 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 8D3023302E2A97B200094478;
-					};
-					8D3023492E2A97B400094478 = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 8D3023302E2A97B200094478;
 					};
@@ -211,7 +162,6 @@
 			targets = (
 				8D3023302E2A97B200094478 /* Magic8Ball-iOS-Demo */,
 				8D30233F2E2A97B400094478 /* Magic8Ball-iOS-DemoTests */,
-				8D3023492E2A97B400094478 /* Magic8Ball-iOS-DemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8D30233E2E2A97B400094478 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D3023482E2A97B400094478 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,13 +198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D3023462E2A97B400094478 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -269,11 +205,6 @@
 			isa = PBXTargetDependency;
 			target = 8D3023302E2A97B200094478 /* Magic8Ball-iOS-Demo */;
 			targetProxy = 8D3023412E2A97B400094478 /* PBXContainerItemProxy */;
-		};
-		8D30234C2E2A97B400094478 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8D3023302E2A97B200094478 /* Magic8Ball-iOS-Demo */;
-			targetProxy = 8D30234B2E2A97B400094478 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -497,40 +428,6 @@
 			};
 			name = Release;
 		};
-		8D30235B2E2A97B400094478 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q373WBEW95;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gianmarco.salerno.Magic8Ball-iOS-DemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Magic8Ball-iOS-Demo";
-			};
-			name = Debug;
-		};
-		8D30235C2E2A97B400094478 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q373WBEW95;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gianmarco.salerno.Magic8Ball-iOS-DemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Magic8Ball-iOS-Demo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,15 +454,6 @@
 			buildConfigurations = (
 				8D3023582E2A97B400094478 /* Debug */,
 				8D3023592E2A97B400094478 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8D30235A2E2A97B400094478 /* Build configuration list for PBXNativeTarget "Magic8Ball-iOS-DemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8D30235B2E2A97B400094478 /* Debug */,
-				8D30235C2E2A97B400094478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
